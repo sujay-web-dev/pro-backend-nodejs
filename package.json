@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sujay-web-dev/pro-backend-nodejs#readme",
   "dependencies": {
+    "date-format": "^4.0.14",
     "express": "^4.18.2"
   },
   "devDependencies": {
