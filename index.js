@@ -1,4 +1,5 @@
 const express = require("express");
+const format = require("date-format");
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.get("/api/v1/insta", (req, res) => {
     userName: "Sujayv",
     followers: 190,
     follows: 999,
-    date: Date.now(),
+    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
   };
 
   res.status(200).json(instaSocial);
@@ -24,7 +25,7 @@ app.get("/api/v1/facebook", (req, res) => {
     userName: "SujayvFacebook",
     followers: 740,
     follows: 9859,
-    date: Date.now(),
+    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
   };
 
   res.status(200).json(instaSocial);
@@ -35,7 +36,7 @@ app.get("/api/v1/linkedin", (req, res) => {
     userName: "Sujayv LinkedIn",
     followers: 7400,
     follows: 985999,
-    date: Date.now(),
+    date: format.asString("dd[MM] - hh:mm:ss", new Date()),
   };
 
   res.status(200).json(instaSocial);
